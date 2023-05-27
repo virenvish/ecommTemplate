@@ -1,0 +1,603 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #efefef;
+    /*font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+/*select,*/
+textarea {
+    min-width: 155px;
+}
+
+.site-border-properties {
+    border-radius: 2px;
+}
+
+/*Custom CSS written*/
+footer {
+    background-color: #232F3E;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 40vh;
+}
+
+    footer .container {
+        width: 80vw;
+    }
+
+    footer hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px dotted white;
+        border-style: none none dotted;
+    }
+
+    footer strong {
+        font-weight: 500;
+        align-content: center;
+    }
+
+    footer p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    footer a {
+        color: white;
+        font-weight: 300;
+    }
+
+.menu {
+    background: #232f3e;
+}
+
+.navbar {
+    border-top: solid .6em #7d0808;
+}
+
+.occasion{
+  color: #fff !important;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+
+.dropdown-menu-cart{
+    padding: 2px;
+    min-width: 21vw;
+}
+
+    .dropdown-menu .panel {
+        margin: 2px;
+    }
+
+.cart {
+    font-size: large;
+}
+
+.cart-badge {
+    position: relative;
+    bottom: 1em;
+    right: .4em;
+    box-shadow: 1px 2px 2px #000;
+}
+
+/*Carousal*/
+#site-carousel {
+    margin-top: 59px;
+}
+
+
+/*Scroll bar below menu*/
+.scrolling-bar-index, .scrolling-bar {
+    background-color: #f1bd1e;
+}
+
+.scrolling-bar {
+    margin-top: 59px;
+}
+
+    .scrolling-bar-index p, .scrolling-bar p {
+        margin: 6px 2px 0px 2px;
+    }
+
+        .scrolling-bar-index, p span, .scrolling-bar p span {
+            font-family: 'Roboto', sans-serif;
+        }
+
+/*-----Input Search----*/
+.input-search {
+    margin-top: 3vh;
+    box-shadow: 0px 0px 1px #232f3e;
+    border-radius: 6px;
+}
+
+    .input-search button {
+        color: white;
+        background: rgb(96,108,136);
+        background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+        background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 );
+    }
+
+
+/*Special Offers*/
+.box {
+    width: 21vw;
+    height: auto;
+    position: relative;
+    /*border: 1px solid #BBB;*/
+    background: #EEE;
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    text-align: right;
+}
+
+    .ribbon span {
+        font-size: 10px;
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        width: 100px;
+        display: block;
+        background: #79A70A;
+        background: linear-gradient(#F70505 0%, #8F0808 100%);
+        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 19px;
+        left: -21px;
+    }
+
+        .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #8F0808;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F0808;
+        }
+
+        .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #8F0808;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F0808;
+        }
+
+
+/*Special Offer widget*/
+.offer-widgets {
+    /*width: 20.5vw;*/
+    width: 100%;
+}
+
+    .offer-widgets img {
+        cursor: pointer;
+        margin-bottom: .5em;
+        box-shadow: 0px 1px 1px #232f3e;
+        width: 100% !important;
+    }
+
+
+/*Coupon Widgits*/
+.coupon-widgit {
+    border: 1px solid #ccc;
+    margin: 0 auto 10px auto;
+    background-color: #EEE;
+    text-align: center;
+    box-shadow: 0px 1px 7px rgba(0,0,0, 0.25);
+}
+
+    .coupon-widgit strong {
+        margin: 2px 0 2px 0;
+        font-size: large;
+        font-weight: 400;
+        color: #232f3e;
+    }
+
+/*----Readymade Ribbon-----*/
+.coupon-ribbon {
+    width: 48%;
+    position: relative;
+    float: right;
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+}
+
+    .coupon-ribbon:nth-child(even) {
+        margin-right: 4%;
+    }
+
+@media (max-width: 500px) {
+    .coupon-ribbon {
+        width: 100%;
+    }
+
+        .coupon-ribbon:nth-child(even) {
+            margin-right: 0%;
+        }
+}
+
+.coupon-ribbon1 {
+    position: absolute;
+    top: -6.1px;
+    right: 10px;
+}
+
+    .coupon-ribbon1:after {
+        position: relative;
+        content: "";
+        top: 15px;
+        width: 0;
+        height: 0;
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-top: 17px solid #F8463F;
+    }
+
+    .coupon-ribbon1 span {
+        position: relative;
+        display: block;
+        text-align: center;
+        background: #F8463F;
+        font-size: 14px;
+        line-height: 1;
+        padding: 12px 8px 10px;
+        border-top-right-radius: 8px;
+        width: 90px;
+    }
+
+        .coupon-ribbon1 span:before, .coupon-ribbon1 span:after {
+            position: absolute;
+            content: "";
+        }
+
+        .coupon-ribbon1 span:before {
+            height: 6px;
+            width: 6px;
+            left: -6px;
+            top: 0;
+            background: #F8463F;
+        }
+
+        .coupon-ribbon1 span:after {
+            height: 6px;
+            width: 8px;
+            left: -8px;
+            top: 0;
+            border-radius: 8px 8px 0 0;
+            background: #C02031;
+        }
+
+/*----Add To Cart Button on Landing page----*/
+
+.button {
+    background-color: #232f3e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+    }
+
+.detail-heading {
+    font-size: 2em;
+    font-weight: 500;
+    color: #7d0808;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*----Login/Signup Modal----*/
+
+.btn-active {
+    background-color: #232f3e;
+    color: white;
+}
+
+.login-signup-modal .modal-dialog {
+    width: 30vw;
+    margin-top: 7vw;
+}
+
+.login-signup-modal .modal-content {
+    border-radius: 0;
+    box-shadow: 0px 1px 7px rgba(0,0,0, 0.25);
+}
+
+.login-signup-modal .modal-header {
+    border-top: solid .6em #7d0808;
+    background-color: #232f3e;
+}
+
+    .login-signup-modal .modal-header .close {
+        background-color: #232f3e;
+    }
+
+    .login-signup-modal .modal-header span, .login-signup-modal .modal-header .close {
+        font-size: large;
+        color: white;
+    }
+
+.login-signup-modal .btn-login, .login-signup-modal .btn-sign-up {
+    border-radius: 0;
+}
+
+.login-signup-area {
+    margin: 1em auto;
+}
+
+    .login-signup-area button {
+        border-radius: 2px;
+    }
+
+    .login-signup-area input[type="text"], .login-signup-area input[type="password"] {
+        border-radius: 2px;
+        margin-bottom: 1em;
+    }
+
+.login-area {
+}
+
+.signup-area {
+    display: none;
+}
+
+/*---User Profile----*/
+.profile-image {
+    max-width: 185px;
+    position: relative;
+}
+
+    .profile-image a {
+        position: absolute;
+        left: 7.7em;
+        bottom: 0.1em;
+        background-color: transparent;
+        color: #ccc;
+        border: none;
+        padding: 0;
+        font-size: large;
+    }
+
+        .profile-image a:hover {
+            color: #232F3E;
+        }
+
+.profile-input, .card-input {
+    position: relative;
+}
+
+    .profile-input input, .card-input input {
+        border-radius: 2px;
+        margin: 0.2em 0 1.2em 0;
+        box-shadow: unset;
+    }
+
+    .profile-input button, .card-input button {
+        background-color: #232F3E;
+    }
+
+    .profile-input input[type=radio]{
+        margin:auto 0;
+    }
+
+    .profile-input .gender{
+        padding:10px 0;
+    }
+
+
+
+    .profile-input .btn-group button, .card-input .btn-group button {
+        width: 5em;
+        color: #ccc;
+        margin-top: 0px;
+        border-radius: 2px;
+    }
+
+    .card-input .btn-group button{
+          margin-top: 2px;
+    }
+
+    /*--Edit toggle button on profile--*/
+
+    .profile-input input[type="checkbox"], .card-input input[type="checkbox"] {
+        position: absolute;
+        right: -4.5em;
+        bottom: 0.6em;
+        margin: 0;
+        /* width: auto; */
+    }
+
+    .profile-input input[type="checkbox"] {
+          right: -4.1em;
+    }
+
+.profile-pic-upload .modal-dialog {
+    width: 34vw;
+    margin-top: 7vw;
+}
+
+.profile-pic-upload .modal-content {
+    border-radius: 0;
+    box-shadow: 0px 1px 7px rgba(0,0,0, 0.25);
+}
+
+.profile-pic-upload input[type="file"] {
+    width: 26vw;
+}
+
+.profile-pic-upload #btnUpload {
+    font-size: 15px;
+}
+
+.card-input input[type="checkbox"] {
+    right: -4em;
+}
+
+.card-input .container {
+    padding: 0;
+}
+
+.card-input-select {
+    display: flex;
+    margin-bottom:1.2em;
+}
+
+select.form-control.site-border-properties.card-edit.payment-dropdown {
+    width: 17.9vw;
+    margin-right: 4px;
+}
+
+.card-input .btn-group {
+    /*margin-top: 1em;*/
+}
+
+.terms-and-condition{
+    height:150vh;
+    overflow-y:auto;
+}
+
+.terms-and-condition-buttons{
+    text-align:right;
+}
+
+/*--Mega Menu--*/
+.mega-submenu {
+    list-style:none;
+    float:left;
+    padding:10px;
+    visibility:hidden;
+    position: absolute;
+    width: 88.4vw;
+    height: 48vh;
+    background-color: #fff;   
+    transition: all 0.1s ease;
+    z-index: -1;
+     background-color: #efefef;     
+}
+
+.mega-menu:hover > .mega-submenu,
+.mega-menu:focus-within > .mega-submenu,
+.mega-menu .mega-submenu:hover,
+.mega-menu .mega-submenu:focus {
+   visibility: visible;
+   opacity: 1;
+   display:inline-block;
+   left:0%;
+}
+
+.mega-submenu{
+  -webkit-box-shadow: 0 10px 6px -6px #000;
+     -moz-box-shadow: 0 10px 6px -6px #000;
+          box-shadow: 0 10px 6px -6px #000;
+}
+
+
+
+/*--Media query settings for alignment scrolling-bar and the yellow scrolling bar--*/
+@media (max-width: 1190px) {
+    #site-carousel {
+        margin-top: 110px;
+    }
+
+     .scrolling-bar {
+        margin-top: 110px;
+    }
+
+    .offer-widgets {
+        /*min-width: 28.50vw;*/
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    #site-carousel {
+        margin-top: 9px;
+    }
+
+    .scrolling-bar {
+        margin-top: 9px;
+    }
+
+    .offer-widgets {
+        /*min-width: 28.50vw;*/
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #site-carousel {
+        margin-top: 9px;
+    }
+
+    .scrolling-bar {
+        margin-top: 9px;
+    }
+
+    .offer-widgets {
+        /*min-width: 28.50vw;*/
+        min-width: 100%;
+    }
+}
+
+/*#------------------------------------------------#*/
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}

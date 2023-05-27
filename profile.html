@@ -1,0 +1,380 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinkBuddy</title>
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link href="content/bootstrap.css" rel="stylesheet"/>
+<link href="content/site.css" rel="stylesheet"/>
+
+    <script src="scripts/modernizr-2.8.3.js"></script>
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+    <!--Fixed Top Navbar-->
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MinkBuddy</a>
+            </div>
+            <!--Login/Cart Section-->
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="#" title="login" data-toggle="modal" data-target="#myModal">SIGN OUT</a></li>
+                    <li class="dropdown">
+                        <a href="#" title="cart" data-toggle="dropdown" class="cart dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge cart-badge">0</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <p>Your cart is empty</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-sm test-cart">
+                                        Goto Cart
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Menu Section-->
+        <div class="container">
+            <div class="menu navbar-collapse collapse nav-left nav-divider">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Food & Beverage</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Apparels & Accessories</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Gifting</a></li>
+                    <li><a href="#">Grocery & Home Needs</a></li>
+                    <li><a href="#">e-Com & Online</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle occasion">Occasion</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Offers Section-->
+    <div class="container-fluid scrolling-bar">
+        <div class="container">
+            <marquee>
+                <p>
+                    ** Discount!!  ** Offers!! ** Savings!!
+                </p>
+            </marquee>
+        </div>
+    </div>
+    <div class="container body-content">
+        <br />
+        
+
+
+<!--Personal Detials-->
+<div class="panel">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3 profile-image">
+                <img src="images/default_avatar-1.jpg" class="img-responsive img-circle" />
+                <a href=# data-toggle="modal" data-target="#myModal">
+                    <span class="glyphicon glyphicon-camera"></span>
+                </a>
+            </div>
+            <div class="col-md-10 profile-input">
+                <div class="col-md-1 col-md-offset-11">
+                    <div>
+                        <label>Edit <input id="chkProfileEdit" type="checkbox"></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control profile-edit" placeholder="Firstname" disabled />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control profile-edit" placeholder="Lastname" disabled />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control profile-edit" placeholder="Email Id" disabled />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control profile-edit" placeholder="Contact" disabled />
+                </div>
+                <div class="col-md-3 ">
+                    <select name="Gender" class="form-control site-border-properties profile-edit payment-dropdown" disabled>
+                        <option value="0">Gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-group btn-group-justified">
+                        
+                        <button type="button" class="btn btn-default profile-edit" disabled>Save</button>
+                        <button type="button" class="btn btn-default profile-edit" disabled>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Card Details-->
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="col-md-12 profile-input">
+                    <div class="col-md-10">
+                        <div>
+                            <strong>Address Details</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-2 edit-checkbox-alignment">
+                        <div>
+                            <label>Edit <input id="chkAddressEdit" type="checkbox"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="text" class="form-control profile-edit address-edit" placeholder="Address Line 1" disabled />
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control profile-edit address-edit" placeholder="Address Line 2" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control profile-edit address-edit" placeholder="City" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control profile-edit address-edit" placeholder="State" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control profile-edit address-edit" placeholder="Pincode" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group btn-group-justified">
+                            
+                            <button type="button" class="btn btn-default profile-edit address-edit" disabled>Save</button>
+                            <button type="button" class="btn btn-default profile-edit address-edit" disabled>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="col-md-12 card-input">
+                    <div class="col-md-10">
+                        <div>
+                            <strong>Card Details</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-2 edit-checkbox-alignment">
+                        <div>
+                            <label>Edit <input id="chkCardEdit" type="checkbox"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="text" class="form-control card-edit" placeholder="Card Number" disabled />
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control card-edit" placeholder="Name on Card" disabled />
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card-input-select">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <select name="Month" class="form-control site-border-properties card-edit payment-dropdown" disabled>
+                                            <option value="0">Month</option>
+                                            <option value="1">Jan</option>
+                                            <option value="2">Feb</option>
+                                            <option value="3">Mar</option>
+                                            <option value="4">Apr</option>
+                                            <option value="5">May</option>
+                                            <option value="6">Jun</option>
+                                            <option value="7">Jul</option>
+                                            <option value="8">Aug</option>
+                                            <option value="9">Sep</option>
+                                            <option value="10">Oct</option>
+                                            <option value="11">Nov</option>
+                                            <option value="12">Dec</option>
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <select name="Month" class="form-control site-border-properties card-edit payment-dropdown" disabled>
+                                            <option value="0">Year</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control card-edit" placeholder="CVV" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group btn-group-justified">
+                            
+                            <button type="button" class="btn btn-default card-edit" disabled>Save</button>
+                            <button type="button" class="btn btn-default card-edit" disabled>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Upload Dialog-->
+<div id="myModal" class="modal fade profile-pic-upload" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <span> Image Upload </span>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control site-border-properties" />
+                    <button id="btnUpload" class="btn btn-sm btn-default site-border-properties">
+                        Upload
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#chkProfileEdit').change(function () {
+            if (this.checked) {
+                $('.profile-edit').prop("disabled", false);
+            }
+            else {
+                $('.profile-edit').prop("disabled", true);
+            }
+        });
+
+        $('#chkCardEdit').change(function () {
+            if (this.checked) {
+                $('.card-edit').prop("disabled", false);
+            }
+            else {
+                $('.card-edit').prop("disabled", true);
+            }
+
+        });
+
+        $('#chkAddressEdit').change(function () {
+            if (this.checked) {
+                $('.address-edit').prop("disabled", false);
+            }
+            else {
+                $('.address-edit').prop("disabled", true);
+            }
+
+        });
+    });
+</script>
+
+        <hr />
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" align="center">
+                    <p>&copy; 2021 - MinkBuddy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Get to Know Us</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Connect on Social Media</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Help</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/bootstrap.js"></script>
+
+
+
+</body>
+</html>
+

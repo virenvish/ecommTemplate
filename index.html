@@ -1,0 +1,468 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinkBuddy</title>
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link href="content/bootstrap.css" rel="stylesheet"/>
+<link href="content/site.css" rel="stylesheet"/>
+
+    <script src="scripts/modernizr-2.8.3.js"></script>
+    
+    
+</head>
+<body>
+    <!--Fixed Top Navbar-->
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">MinkBuddy</a>
+            </div>
+            <!--Login/Cart Section-->
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="#" title="login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>                    
+                    <li><a href="#" title="signup" data-toggle="modal" data-target="#myModal">SIGN UP</a></li>
+                    <li><a href="partner.html" title="partner">BECOME A PARTNER</a></li>
+                    <li class="dropdown">
+                        <a href="#" title="cart" data-toggle="dropdown" class="cart dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge cart-badge">0</span></a>
+                        <ul class="dropdown-menu dropdown-menu-cart">
+                            <li>
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <p>Your cart is empty</p>
+                                    </div>                                    
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-sm test-cart">
+                                        Goto Cart
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Menu Section-->
+        <div class="container">
+            <div class="menu navbar-collapse collapse navbar-left">
+                <ul class="nav navbar-nav">
+                    <li class="mega-menu">
+                        <a href="#">Food & Beverage</a>
+                        
+                    </li>
+                    <li class="mega-menu">
+                        <a href="#">Electronics</a>
+                        
+                        
+                    </li>
+                    <li><a href="#">Apparels & Accessories</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Gifting</a></li>
+                    <li><a href="#">Grocery & Home Needs</a></li>
+                    <li><a href="#">e-Com & Online</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle occasion">Occasion</a>
+                        <ul class="dropdown-menu navbar-right">
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                            <li><a href="#">Occasion #1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap Carousal-->
+    <div id="site-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://cdn.gyftr.com/gyftrweb/banners/home_grocery_desktop_banner1617784134.png" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="https://cdn.gyftr.com/gyftrweb/banners/home_healthdaydesktop1617784158.gif" alt="Chicago" style="width:100%;">
+            </div>
+            <!-- <div class="item"> -->
+            <!-- <img src="ny.jpg" alt="New york" style="width:100%;"> -->
+            <!-- </div> -->
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+    <!--Offers Section-->
+    <div class="container-fluid scrolling-bar-index">
+        <div class="container">
+            <marquee>
+                <p>
+                    ** Discount!!  ** Offers!! ** Savings!!
+                </p>
+            </marquee>
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        <div class="input-group input-group-lg input-search">
+            <input type="text" class="form-control" placeholder="Search from here">
+            <div class="input-group-btn">
+                <button class="btn" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-xs-8">
+                
+
+
+<div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 7%</span>
+                </span>
+            </div>
+            <a href="detail.html">
+                <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/bata_home_home_page_bata1559795710.jpg" alt="bata">
+            </a>
+            <div>
+                <strong>
+                    BATA
+                </strong>
+            </div>
+            <div class="add-to-cart">
+                <button id="checkout" class="button test-cart">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 10 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/domino's-pizza-online_home_dominos1540912458.jpg" alt="dominos-pizza-online"><div>
+                <strong>
+                    DOMINOS
+                </strong>
+            </div>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 15 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/major-brands---aldo_home_aldo1536673338.jpg" alt="major-brands-aldo">
+            <strong>
+                ALDO
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 5 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/croma_home_croma1536673270.jpg" alt="croma">
+            <strong>
+                CROMA
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 10 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/flipkart_home_flipkart1540928381.jpg" alt="flipkart">
+            <strong>
+                FLIPKART
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 7 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/myntra_home_home_page_myntra1559795766.jpg" alt="myntra">
+            <strong>
+                MYNTRA
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 5 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/big-bazaar_home_home_page_bigbazaar1559795956.jpg" alt="big-bazaar">
+            <strong>
+                BIG BAZAAR
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 3 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/ola-cabs_home_ola1558068968.jpg" alt="ola-cabs">
+            <strong>
+                OLA CABS
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 15 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/puma_home_puma_home1561005003.jpg" alt="puma">
+            <strong>
+                PUMA
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-6">
+        <div class="coupon-widgit">
+            <div class="coupon-ribbon">
+                <span class="coupon-ribbon1">
+                    <span>Save 10 %</span>
+                </span>
+            </div>
+            <img class="img-responsive" src="https://cdn.gyftr.com/gyftrweb/brands/levis_home_levis1536673359.jpg" alt="levis">
+            <strong>
+                LEVI'S
+            </strong>
+            <div class="add-to-cart">
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-4">
+                <div class="box">
+                    <div class="ribbon"><span>Special Offers</span></div>
+                </div>
+                <div class="offer-widgets">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_chicklet-smartbuy1603716808.png" class="img-fluid img-thumbnail" alt="Hdfc smartbuy side chicklet ">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_indusind-chiclet-a1605705026.png" class="img-fluid img-thumbnail" alt="Indusind Chiclet">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_payback_chicklet1605704615.jpg" class="img-fluid img-thumbnail" alt="Payback chiclet">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_chicklet1612524753.png" class="img-fluid img-thumbnail" alt="Shopplus promotion">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_chicklet1609592971.png" class="img-fluid img-thumbnail" alt="SC promotion">
+                    <img src="https://cdn.gyftr.com/gyftrweb/banners/side_corporate-gifting1614060198.png" class="img-fluid img-thumbnail" alt="Corporate Gifting">
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <p>&copy; 2021 - MinkBuddy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Get to Know Us</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Connect on Social Media</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Help</strong>
+                    <hr />
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Authentication Modal-->
+    <div class="login-signup-modal">
+        <div id="myModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">                    
+                    <div class="modal-header">  
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <span> GET STARTED </span>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="btn-group btn-group-justified">
+                            <a href="#" id="btn-login" class="btn btn-default btn-active">LOGIN</a>
+                            <a href="#" id="btn-sign-up" class="btn btn-default">SIGN UP</a>
+                        </div> 
+                        <div class="login-signup-area">
+                            <div class="login-area">
+                                <input type="text" class="form-control" placeholder="Username" />
+                                <input type="password" class="form-control" placeholder="Password" />
+                                <p class="text-right">
+                                    <a href="#"><i>Forgot Password?</i></a>
+                                </p>
+                                <div class="text-right">
+                                    <button class="btn btn-sm btn-default text-right">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="signup-area">
+                                <input type="text" class="form-control" placeholder="Email Id" />
+                                <input type="text" class="form-control" placeholder="Firstname" />
+                                <input type="text" class="form-control" placeholder="Lastname" />
+                                <input type="password" class="form-control" placeholder="Password" />
+                                <input type="password" class="form-control" placeholder="Confirm Passowrd" />                                
+                                <div class="text-right">
+                                    <button class="btn btn-sm btn-default text-right">
+                                        Sign up
+                                    </button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+
+    <script src="scripts/TempScript.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"7b960a70572743809ef1a2c16e8aca20"}
+</script>
+<script type="text/javascript" src="http://localhost:58121/715f3d37639941f3854db62fdfb4c361/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
+
